@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bde-config version="1">
+  <container name="IDAPI">
+    <variable name="VERSION" value="5.0"/>
+    <variable name="DLL32" value="IDAPI32.DLL"/>
+    <container name="ALIASES">
+      <container name="MyAlias">
+        <variable name="PATH" value="C:\Data"/>
+        <variable name="DRIVER" value="PARADOX"/>
+        <variable name="ENABLE BCD" value="FALSE"/>
+      </container>
+      <container name="SampleAccess">
+        <variable name="DATABASE NAME" value="C:\Data\sample.mdb"/>
+        <variable name="DRIVER" value="MSACCESS"/>
+      </container>
+    </container>
+    <container name="PARADOX">
+      <variable name="NET DIR" value=""/>
+      <variable name="BLOCK SIZE" value="2048"/>
+    </container>
+  </container>
+</bde-config>

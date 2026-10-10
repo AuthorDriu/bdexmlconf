@@ -1,0 +1,19 @@
+[package]
+name = "bdexmlconf"
+version = "0.1.0"
+edition = "2024"
+description = "Convert Borland BDE configuration files (IDAPI.CFG / IDAPI32.CFG) to and from XML"
+license = "MIT"
+
+[[bin]]
+name = "bdexmlconf"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+encoding_rs = "0.8"
+quick-xml = "0.42"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.56"
